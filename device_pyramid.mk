@@ -18,7 +18,6 @@
 # common msm8660 configs
 $(call inherit-product, device/htc/msm8660-common/msm8660.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/pyramid/overlay
@@ -127,5 +126,4 @@ $(call inherit-product, device/htc/pyramid/media_htcaudio.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Device ID
-PRODUCT_NAME := full_pyramid
 PRODUCT_DEVICE := pyramid
