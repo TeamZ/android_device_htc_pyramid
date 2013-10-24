@@ -24,8 +24,14 @@ PRODUCT_NAME := carbon_pyramid
 PRODUCT_BRAND := htc
 PRODUCT_MODEL := HTC Sensation
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=carbon.ville.$(shell date +%m%d%y).$(shell date +%H%M%S)
+PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=carbon.pyramid.$(shell date +%m%d%y).$(shell date +%H%M%S)
 
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_pyramid BUILD_FINGERPRINT=tmous/htc_pyramid/pyramid:4.0.3/IML74K/356011.14:user/release-keys PRIVATE_BUILD_DESC="3.32.531.14 CL356011 release-keys" BUILD_NUMBER=356011
+
+#Goo.im params
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=shantur \
+    ro.goo.rom=carbon_pyramid \
+    ro.goo.version=$(shell date +%s)
